@@ -10,23 +10,27 @@
 // ---------- Problem 1: Range Builder ----------
 // Return an array of every integer from start to end, inclusive.
 // Use a for loop and .push() to build the array one number at a time.
-function getNumbersInRange(start, end) {
-  // TODO: your code here
-
+/* function getNumbersInRange(start, end) {
+  let highest = Math.max (start,end)
+  list = []
+  for (let i = start; i <= highest; i++){
+    list.push(i)
+  }
+  return list
 }
 
 console.log(getNumbersInRange(1, 5));  // [1, 2, 3, 4, 5]
 console.log(getNumbersInRange(10, 10)); // [10]
-console.log(getNumbersInRange(3, 8));  // [3, 4, 5, 6, 7, 8]
-
+console.log(getNumbersInRange(3, 8));  // [3, 4, 5, 6, 7, 8] */
 
 // ---------- Problem 2: Sum a Range ----------
 // Return the sum of every integer from start to end, inclusive.
 // Use the accumulator pattern: let total = 0; total += i; each pass.
 function sumRange(start, end) {
-  // TODO: your code here
+  let total = 0
 
 }
+
 
 console.log(sumRange(1, 5));   // 15
 console.log(sumRange(1, 100)); // 5050
@@ -94,7 +98,7 @@ console.log(primesUnder(20)); // [2, 3, 5, 7, 11, 13, 17, 19]
 console.log(primesUnder(2));  // []
 
 
-// ---------- Stretch (optional) ----------
+/* // ---------- Stretch (optional) ----------
 // Rewrite multiplicationTable so it uses break or continue to skip
 // printing the row where the row number equals the column number
 // (the diagonal).
@@ -104,3 +108,4 @@ function multiplicationTableSkipDiagonal(n) {
 }
 
 console.log(multiplicationTableSkipDiagonal(3));
+ */
