@@ -26,28 +26,36 @@ console.log(getNumbersInRange(3, 8));  // [3, 4, 5, 6, 7, 8] */
 // ---------- Problem 2: Sum a Range ----------
 // Return the sum of every integer from start to end, inclusive.
 // Use the accumulator pattern: let total = 0; total += i; each pass.
-function sumRange(start, end) {
-  let total = 0
 
+/* function sumRange(start, end) {
+  let total = 0
+  for ( let i = start; i <= end; i++){
+    total += i
+  }
 }
 
 
 console.log(sumRange(1, 5));   // 15
 console.log(sumRange(1, 100)); // 5050
-console.log(sumRange(4, 4));   // 4
+console.log(sumRange(4, 4));   // 4 */
 
 
 // ---------- Problem 3: Countdown ----------
 // Return an array counting down from n to 1.
 // Use a while loop, not a for loop.
-function countdown(n) {
-  // TODO: your code here
 
+/* function countdown(n) {
+  list = []
+  while (n > 0){
+    list.push(n);
+    n -= 1;
+  }
+  return list;
 }
 
 console.log(countdown(5)); // [5, 4, 3, 2, 1]
 console.log(countdown(1)); // [1]
-console.log(countdown(8)); // [8, 7, 6, 5, 4, 3, 2, 1]
+console.log(countdown(8)); // [8, 7, 6, 5, 4, 3, 2, 1] */
 
 
 // ---------- Problem 4: Count the Vowels ----------
