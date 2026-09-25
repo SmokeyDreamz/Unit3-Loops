@@ -63,15 +63,22 @@ console.log(countdown(8)); // [8, 7, 6, 5, 4, 3, 2, 1] */
 // Loop through every index of the string and use an if statement to
 // check whether that character is a vowel. Access a character with
 // str[i] or str.charAt(i).
-function countVowels(str) {
-  // TODO: your code here
 
+/* function countVowels(str) {
+  count = str.length
+  vowels = 0
+  for (i = 0; i < count; i++){
+    if (str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u"){
+      vowels += 1
+    }
+  }
+  return vowels;
 }
 
 console.log(countVowels("hello"));      // 2
 console.log(countVowels("javascript")); // 3
 console.log(countVowels("xyz"));        // 0
-console.log(countVowels("aeiou"));      // 5
+console.log(countVowels("aeiou"));      // 5 */
 
 
 // ---------- Problem 5: Multiplication Table ----------
@@ -80,8 +87,13 @@ console.log(countVowels("aeiou"));      // 5
 // products separated by spaces. Needs a loop inside a loop —
 // build each row as its own string before adding it to the result.
 function multiplicationTable(n) {
-  // TODO: your code here
-
+  list = []
+  for (i = 1; i < n+1; i++){
+    for (h = 1; h < i; h++){
+      list.push(i*h);
+    }
+  }
+  return list;
 }
 
 console.log(multiplicationTable(3));
